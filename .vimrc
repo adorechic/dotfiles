@@ -1,9 +1,12 @@
 set nocompatible
 filetype off
-set rtp+=~/.vim/vundle.git/
-call vundle#rc()
+set rtp+=~/dotfiles/neobundle.vim
+if has('vim_starting')
+  set runtimepath+=~/dotfiles/neobundle.vim
+  call neobundle#rc(expand('~/.vim/'))
+endif
 
-Bundle 'The-NERD-tree'
+NeoBundle 'The-NERD-tree'
 
 filetype on
 filetype plugin indent on
