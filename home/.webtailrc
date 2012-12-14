@@ -1,0 +1,16 @@
+var line = $('pre:last');
+var text = line.text();
+
+if (text == '\n') {
+  line.css({
+    margin: '3em 0',
+    height: 1,
+    background: 'lime'
+  });
+}
+
+if (text.match(/CACHE|Load/)) {
+  line.css({
+    color: '#E1017B'
+  });
+}
