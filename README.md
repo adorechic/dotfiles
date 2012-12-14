@@ -18,3 +18,8 @@ you should use over git 1.7.10
   name = name
   email = mail@gmail.com
 ```
+
+# source-
+```
+brew install source-highlight
+```
