@@ -33,6 +33,7 @@ set shiftwidth=2
 set expandtab
 set nocompatible
 set autoindent
+set cursorline
 syntax on
 set number
 
