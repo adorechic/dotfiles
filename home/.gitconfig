@@ -2,7 +2,7 @@
 	editor = /usr/local/bin/vi
   excludesfile = ~/.gitignore
 [include]
-      path = ~/.gitconfig.local
+  path = ~/.gitconfig.local
 [color]
 	ui = auto
 [alias]

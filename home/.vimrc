@@ -21,6 +21,8 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'JavaScript-syntax'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'rodjek/vim-puppet'
+NeoBundle 'matchit.zip'
+NeoBundle 'ruby-matchit'
 
 filetype on
 filetype indent on
