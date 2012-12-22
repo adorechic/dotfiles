@@ -35,16 +35,8 @@ be() {
   growlnotify -t "finished. tooks $time" -m "$*"
 }
 
-# local spec setup
-local_spec_setup() {
-  export USE_BUNDLER=1
-  be rake solr:setup\[8\]
-  be rake cookpad:spec:setup\[8\]
-}
-
 # keybindをviにする
 bindkey -v
-
 
 # history保存設定
 HISTFILE=~/.zsh_history
