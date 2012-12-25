@@ -2,8 +2,8 @@ set nocompatible
 filetype off
 set rtp+=~/.vim/neobundle.vim.git
 if has('vim_starting')
-  set runtimepath+=~/.vim/neobundle.vim.git
-  call neobundle#rc(expand('~/.vim/bundle'))
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+  call neobundle#rc(expand('~/.vim/bundle/'))
 endif
 
 
@@ -11,8 +11,8 @@ NeoBundle 'Shougo/vimproc'
 "after install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet'
-"NeoBundle 'adorechic/snipmate-snippets'
-NeoBundle 'git://github.com/adorechic/snipmate-snippets.git'
+NeoBundle 'adorechic/snipmate-snippets'
+"NeoBundle 'git://github.com/adorechic/snipmate-snippets.git'
 NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'Shougo/unite.vim'
