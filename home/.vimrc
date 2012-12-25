@@ -11,7 +11,7 @@ NeoBundle 'Shougo/vimproc'
 "after install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet'
-NeoBundle 'adorechic/snipmate-snippets'
+"NeoBundle 'adorechic/snipmate-snippets'
 "NeoBundle 'git://github.com/adorechic/snipmate-snippets.git'
 NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'tpope/vim-rails'
