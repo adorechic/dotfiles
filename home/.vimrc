@@ -1,10 +1,9 @@
 set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/neobundle.vim
+
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
-  call neobundle#rc(expand('~/.vim/bundle/'))
 endif
+call neobundle#rc(expand('~/.vim/bundle/'))
 
 
 NeoBundle 'Shougo/vimproc'
@@ -25,9 +24,15 @@ NeoBundle 'rodjek/vim-puppet'
 NeoBundle 'matchit.zip'
 NeoBundle 'ruby-matchit'
 
-filetype on
-filetype indent on
-filetype plugin on
+filetype plugin indent on
+
+" Installation check.
+if neobundle#exists_not_installed_bundles()
+  echomsg 'Not installed bundles : ' .
+        \ string(neobundle#get_not_installed_bundle_names())
+  echomsg 'Please execute ":NeoBundleInstall" command.'
+  "finish
+endif
 
 set tabstop=2
 set shiftwidth=2
