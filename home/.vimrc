@@ -205,12 +205,3 @@ autocmd BufWritePre * :%s/\t/  /ge
 set autoread                     " 他で書き換えられたら自動で読み直す "
 set showmode                     " 現在のモードを表示  "
 
-" OSのクリップボードを使用する
-"set clipboard+=unnamed
-" ターミナルでマウスを使用できるようにする
-set mouse=a
-set guioptions+=a
-set ttymouse=xterm2
-
-"ヤンクした文字は、システムのクリップボードに入れる"
-"set clipboard=unnamed
