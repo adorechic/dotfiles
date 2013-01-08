@@ -192,7 +192,7 @@ case ${UID} in
     }
 
     #RPROMPT='`rprompt-git-current-branch`${RESET}${WHITE}[${BLUE}%(5~,%-2~/.../%2~,%~)${WHITE}]${RESET}'
-    RPROMPT='`rprompt-git-current-branch`'
+    #RPROMPT='`rprompt-git-current-branch`'
     ;;
 esac
 
