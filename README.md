@@ -23,3 +23,8 @@ you should use over git 1.7.10
 ```
 brew install source-highlight
 ```
+
+# z
+```
+brew install z
+```
