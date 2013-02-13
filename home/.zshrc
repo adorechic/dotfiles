@@ -14,7 +14,7 @@ alias la='ls -a'
 alias ll='ls -ltr'
 alias g='git'
 alias grep='grep --color=auto'
-alias vi='/usr/local/bin/vi'
+alias vi='vim'
 
 # 関数
 find-grep () { find . -type f -print | xargs grep -n --binary-files=without-match $@ }
