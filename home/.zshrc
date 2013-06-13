@@ -1,8 +1,5 @@
-[ -f ~/.zshrc.local ] && source ~/.zshrc.local ]
 PATH=/usr/local/bin:$PATH:$HOME/work/shells
 export PATH
-#PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
 export LANG=ja_JP.UTF-8
 export LSCOLORS=ExFxCxdxBxegedabagacad
@@ -15,6 +12,8 @@ alias ll='ls -ltr'
 alias g='git'
 alias grep='grep --color=auto'
 alias vi='vim'
+alias -g NC="| sed -e $'s/\e\[[0-9;]*m//g'"
+alias ber='be rspec -fd'
 
 # 関数
 find-grep () { find . -type f -print | xargs grep -n --binary-files=without-match $@ }
@@ -211,3 +210,6 @@ esac
 function precmd () {
   z --add "$(pwd -P)"
 }
+
+# local zshrc
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local ]
