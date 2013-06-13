@@ -1,13 +1,13 @@
 [core]
-	editor = /usr/local/bin/vi
+  editor = /usr/bin/vim
   excludesfile = ~/.gitignore
 [include]
   path = ~/.gitconfig.local
 [color]
-	ui = auto
+  ui = auto
 [alias]
-	co = checkout
-	st = status -sb
-	b = branch
-	d = diff
-	dc = diff --cached
+  co = checkout
+  st = status -sb
+  b = branch
+  d = diff
+  dc = diff --cached
