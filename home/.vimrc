@@ -40,6 +40,7 @@ set expandtab
 set nocompatible
 set autoindent
 set cursorline
+colorscheme koehler
 
 " 全角スペースの表示
 highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
