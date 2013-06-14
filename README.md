@@ -28,3 +28,6 @@ brew install source-highlight
 ```
 brew install z
 ```
+
+# Ricty Font
+https://github.com/sanemat/homebrew-font
