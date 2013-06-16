@@ -34,9 +34,6 @@ be() {
   growlnotify -t "finished. tooks $time" -m "$*"
 }
 
-# keybindをviにする
-bindkey -v
-
 # history保存設定
 HISTFILE=~/.zsh_history
 HISTSIZE=50000

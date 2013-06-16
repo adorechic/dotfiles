@@ -31,3 +31,8 @@ brew install z
 
 # Ricty Font
 https://github.com/sanemat/homebrew-font
+
+# emacs
+```
+brew install emacs --cocoa
+```
