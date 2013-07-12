@@ -14,6 +14,7 @@ alias grep='grep --color=auto'
 alias vi='vim'
 alias -g NC="| sed -e $'s/\e\[[0-9;]*m//g'"
 alias ber='be rspec -fd'
+alias bers='be spring rspec -fd'
 
 # 関数
 find-grep () { find . -type f -print | xargs grep -n --binary-files=without-match $@ }
