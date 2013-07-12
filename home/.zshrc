@@ -17,6 +17,8 @@ alias ber='be rspec -fd'
 
 # 関数
 find-grep () { find . -type f -print | xargs grep -n --binary-files=without-match $@ }
+memo () { vim ~/Documents/memos/`date +%Y%m%d`-$1 }
+
 # cd をしたときにlsを実行する
 function chpwd() { ls }
 
