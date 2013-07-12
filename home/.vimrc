@@ -206,3 +206,6 @@ autocmd BufWritePre * :%s/\t/  /ge
 set autoread                     " 他で書き換えられたら自動で読み直す "
 set showmode                     " 現在のモードを表示  "
 
+" ruby hash rocket replace
+command! -bar -range=% NotRocket :<line1>, <line2>s/:\(\w\+\)\s*=>/\1:/ge
+vnoremap <silent> gr :NotRocket<CR>
