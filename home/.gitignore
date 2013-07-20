@@ -6,6 +6,5 @@
 
 *.swp
 *.swo
-\#*#
 doc/tags
 doc/tags-ja
