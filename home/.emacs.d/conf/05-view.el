@@ -2,6 +2,9 @@
 (setq hl-line-face 'underline) ; 下線
 (global-hl-line-mode)
 
+;; 行番号を表示
+(global-linum-mode t)
+
 ;;;; mode line
 ;; カラム番号
 (column-number-mode t)
