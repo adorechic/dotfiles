@@ -13,3 +13,9 @@
 
 ;; インデントにタブ文字を使わない
 (setq-default indent-tabs-mode nil)
+
+;; バックアップとオートセーブを~/.emacs.d/backups/へ集める
+(add-to-list 'backup-directory-alist
+             (cons "." "~/.emacs/backups/"))
+(setq auto-save-file-name-transforms
+      `((".*" ,(expand-file-name "~/.emacs.d/backups/") t)))
