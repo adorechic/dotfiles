@@ -11,6 +11,8 @@
   '(
     init-loader
     redo+
+    anything
+    descbinds-anything
     ))
 
 (let ((not-installed (loop for x in installing-package-list
