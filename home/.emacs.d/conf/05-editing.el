@@ -19,3 +19,7 @@
              (cons "." "~/.emacs/backups/"))
 (setq auto-save-file-name-transforms
       `((".*" ,(expand-file-name "~/.emacs.d/backups/") t)))
+
+;; shebangからはじまるファイルは実行権限付与する
+(add-hook 'after-save-hook
+          'executable-make-buffer-file-executable-if-script-p)
