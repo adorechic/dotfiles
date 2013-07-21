@@ -10,6 +10,7 @@
 (defvar installing-package-list
   '(
     init-loader
+    redo+
     ))
 
 (let ((not-installed (loop for x in installing-package-list

@@ -23,3 +23,8 @@
 ;; shebangからはじまるファイルは実行権限付与する
 (add-hook 'after-save-hook
           'executable-make-buffer-file-executable-if-script-p)
+
+;; redo+
+(require 'redo+)
+;; C-' にredoをわりあてる !! terminal modeだと動かない
+(global-set-key (kbd "C-,") 'redo)
