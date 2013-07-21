@@ -2,5 +2,6 @@
 .emacs.d/auto-save-list
 home/.emacs.d/url
 home/.emacs.d/elpa
+\.#*
 \#*#
 *~
