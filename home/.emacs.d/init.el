@@ -13,6 +13,7 @@
     redo+
     anything
     descbinds-anything
+    auto-complete
     ))
 
 (let ((not-installed (loop for x in installing-package-list
