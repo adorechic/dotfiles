@@ -15,6 +15,8 @@
     descbinds-anything
     auto-complete
     yaml-mode
+    ruby-electric
+    ruby-block
     ))
 
 (let ((not-installed (loop for x in installing-package-list
