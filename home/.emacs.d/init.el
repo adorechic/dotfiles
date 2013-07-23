@@ -17,6 +17,7 @@
     yaml-mode
     ruby-electric
     ruby-block
+    haml-mode
     ))
 
 (let ((not-installed (loop for x in installing-package-list
