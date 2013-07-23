@@ -18,6 +18,8 @@
     ruby-electric
     ruby-block
     haml-mode
+    ruby-compilation
+    rinari
     ))
 
 (let ((not-installed (loop for x in installing-package-list
