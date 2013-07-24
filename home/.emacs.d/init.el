@@ -21,6 +21,7 @@
     ruby-compilation
     rinari
     egg
+    yasnippet
     ))
 
 (let ((not-installed (loop for x in installing-package-list

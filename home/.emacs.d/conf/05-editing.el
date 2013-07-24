@@ -32,3 +32,7 @@
 ;; cua-mode
 (cua-mode t)
 (setq cua-enable-cua-keys nil) ; CUAキーバインドをオフ
+
+;; yasnippet
+(require 'yasnippet)
+(yas-global-mode 1)

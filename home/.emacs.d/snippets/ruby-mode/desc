@@ -1,0 +1,6 @@
+# name: describe
+# key: desc
+# --
+describe ${1:describe} do
+  $0
+end
