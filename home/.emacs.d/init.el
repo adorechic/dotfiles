@@ -20,6 +20,7 @@
     haml-mode
     ruby-compilation
     rinari
+    egg
     ))
 
 (let ((not-installed (loop for x in installing-package-list
