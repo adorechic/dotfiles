@@ -22,6 +22,7 @@
     rinari
     egg
     yasnippet
+    less-css-mode
     ))
 
 (let ((not-installed (loop for x in installing-package-list
