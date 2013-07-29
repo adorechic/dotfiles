@@ -9,6 +9,9 @@
 (require 'haml-mode)
 (require 'rinari)
 
+;; マジコメしない
+(setq ruby-insert-encoding-magic-comment nil)
+
 (defun ruby-mode-hooks ()
   (ruby-electric-mode t)
   (ruby-block-mode t)
