@@ -23,6 +23,8 @@
     egg
     yasnippet
     less-css-mode
+    scss-mode
+    coffee-mode
     ))
 
 (let ((not-installed (loop for x in installing-package-list
