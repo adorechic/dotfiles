@@ -1,4 +1,4 @@
-PATH=/usr/local/bin:$PATH:$HOME/work/shells
+PATH=~/bin:/usr/local/bin:$PATH:$HOME/work/shells
 export PATH
 
 export LANG=ja_JP.UTF-8
