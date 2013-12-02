@@ -11,3 +11,7 @@
   b = branch
   d = diff
   dc = diff --cached
+[pager]
+  log = diff-highlight | less
+  show = diff-highlight | less
+  diff = diff-highlight | less
