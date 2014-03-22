@@ -5,6 +5,7 @@ export LANG=ja_JP.UTF-8
 export LSCOLORS=ExFxCxdxBxegedabagacad
 export LESS='-R'
 export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
+export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 
 alias ls='ls -G'
 alias la='ls -a'
