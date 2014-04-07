@@ -10,7 +10,7 @@
   st = status -sb
   b = branch
   d = diff
-  dc = diff --cached
+  ds = diff --cached
 [pager]
   log = /usr/local/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
   show = /usr/local/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
