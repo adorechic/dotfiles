@@ -11,6 +11,11 @@
   b = branch
   d = diff
   ds = diff --cached
+  g = grep --line-number --show-function --color --heading --break
+  l = log --decorate
+  lp = log --decorate --stat --patch
+  fixup = commit --amend -C HEAD
+  gsub = git-gsub
 [pager]
   log = /usr/local/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
   show = /usr/local/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
