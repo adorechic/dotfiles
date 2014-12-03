@@ -38,7 +38,7 @@ be() {
   else
     time="$time sec."
   fi
-  growlnotify -t "finished. tooks $time" -m "$*"
+  #growlnotify -t "finished. tooks $time" -m "$*"
 }
 
 # history保存設定
