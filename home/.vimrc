@@ -3,8 +3,8 @@ set nocompatible
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
-call neobundle#rc(expand('~/.vim/bundle/'))
 
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 NeoBundle 'Shougo/vimproc'
 "after install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
@@ -23,6 +23,8 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'rodjek/vim-puppet'
 NeoBundle 'matchit.zip'
 NeoBundle 'ruby-matchit'
+
+call neobundle#end()
 
 filetype plugin indent on
 
