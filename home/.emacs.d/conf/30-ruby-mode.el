@@ -1,13 +1,18 @@
 ;; ruby-mode
 (setq ruby-deep-indent-paren-style nil)
 
-;; 自動でendなどを補完
-(require 'ruby-electric)
-
 ;; 対応するendや括弧をハイライト
 (require 'ruby-block)
 (require 'haml-mode)
 (require 'rinari)
+
+;; 自動でendなどを補完
+(require 'ruby-electric)
+(defun ruby-insert-end ()
+  (interactive)
+  (insert "end")
+  (ruby-indent-line t)
+  (end-of-line))
 
 ;; マジコメしない
 (setq ruby-insert-encoding-magic-comment nil)
