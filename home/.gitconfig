@@ -12,7 +12,8 @@
   d = diff
   ds = diff --cached
   g = grep --line-number --show-function --color --heading --break
-  l = log --decorate
+  l = log --oneline --decorate --color
+  lg = log --oneline --decorate --color --graph
   lp = log --decorate --stat --patch
   fixup = commit --amend -C HEAD
   gsub = git-gsub
