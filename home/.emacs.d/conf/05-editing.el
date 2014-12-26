@@ -41,3 +41,6 @@
 ;; yasnippet
 (require 'yasnippet)
 (yas-global-mode 1)
+
+;; yes-noをy-nに置き換え
+(fset 'yes-or-no-p 'y-or-n-p)
