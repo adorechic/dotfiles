@@ -10,6 +10,13 @@ homesick list
 homesick symlink dotfiles
 ```
 
+# brew
+```
+brew tap Homebrew/brewdler
+brew brewdle
+brew brewdle dump # To dump current
+```
+
 # local config
 ## .gitconfig.local
 you should use over git 1.7.10
@@ -19,20 +26,5 @@ you should use over git 1.7.10
   email = mail@gmail.com
 ```
 
-# source-
-```
-brew install source-highlight
-```
-
-# z
-```
-brew install z
-```
-
 # Ricty Font
 https://github.com/sanemat/homebrew-font
-
-# emacs
-```
-brew install emacs --cocoa
-```
