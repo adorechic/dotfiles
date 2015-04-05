@@ -53,3 +53,4 @@ brew 'zeromq'
 brew 'zsh', args: ['disable-etcdir']
 brew 'zsh-completions'
 brew 'caskroom/cask/brew-cask'
+cask 'flashlight'
