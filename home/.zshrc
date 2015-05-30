@@ -216,5 +216,8 @@ function precmd () {
   z --add "$(pwd -P)"
 }
 
+# zhs-completions
+fpath=(/usr/local/share/zsh-completions $fpath)
+
 # local zshrc
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local ]
