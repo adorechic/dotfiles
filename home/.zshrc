@@ -14,6 +14,7 @@ alias g='git'
 alias grep='grep --color=auto'
 alias vi='vim'
 alias -g NC="| sed -e $'s/\e\[[0-9;]*m//g'"
+alias be='bundle exec'
 alias ber='be rspec -fd'
 alias bers='be spring rspec -fd'
 alias emacs-daemon='emacs --daemon'
@@ -28,18 +29,16 @@ motionspec () { rake spec files=$1 }
 # cd をしたときにlsを実行する
 function chpwd() { ls }
 
-# コマンド終了したらGrowl通知
-be() {
-  before=`date +'%s'`
-  bundle exec $@
-  after=`date +'%s'`
-  time=`expr $after - $before`
-  if [ $time -gt 180 ]; then
-    time="`expr $time / 60` min."
-  else
-    time="$time sec."
-  fi
-  #growlnotify -t "finished. tooks $time" -m "$*"
+# Notify to Notification Center
+function display_notification () {
+  osascript -e 'on run argv
+    display notification current date as text with title item 1 of argv
+  end run' -- "$*"
+}
+
+function callme () {
+  "$@"
+  display_notification "($?)" "$@"
 }
 
 # history保存設定
