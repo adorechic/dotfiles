@@ -11,6 +11,7 @@
   '(
     init-loader
     redo+
+    helm
     auto-complete
     yaml-mode
     ruby-electric
