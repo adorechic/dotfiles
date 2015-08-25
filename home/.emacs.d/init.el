@@ -11,8 +11,6 @@
   '(
     init-loader
     redo+
-    anything
-    descbinds-anything
     auto-complete
     yaml-mode
     ruby-electric
