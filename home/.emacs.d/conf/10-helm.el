@@ -1,6 +1,14 @@
 (require 'helm)
 (require 'helm-ls-git)
 (helm-mode 1)
+(custom-set-variables
+   '(helm-truncate-lines t) ; Truncate too long line
+   '(helm-delete-minibuffer-contents-from-point t) ; Do not clear by Ctrl-k
+   '(helm-mini-default-sources '(helm-source-buffers-list
+                                 helm-source-files-in-current-dir
+                                 helm-source-ls-git
+                                 helm-source-recentf
+                                 )))
 (define-key global-map (kbd "C-x C-o") 'helm-mini)
 
 ;; TABで補完
