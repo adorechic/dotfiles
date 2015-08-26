@@ -12,6 +12,7 @@
     init-loader
     redo+
     helm
+    helm-ls-git
     auto-complete
     yaml-mode
     ruby-electric

@@ -1,4 +1,5 @@
 (require 'helm)
+(require 'helm-ls-git)
 (helm-mode 1)
 (define-key global-map (kbd "C-x C-o") 'helm-mini)
 
