@@ -58,3 +58,26 @@
 
 (setq interprogram-cut-function 'paste-to-osx)
 (setq interprogram-paste-function 'copy-from-osx)
+
+;; ddskk
+(require 'skk-vars)
+(global-set-key "\C-x\C-j" 'skk-mode)
+(autoload 'skk-mode "skk" nil t)
+(autoload 'skk-auto-fill-mode "skk" nil t)
+(autoload 'skk-isearch-mode-setup "skk-isearch" nil t)
+(autoload 'skk-isearch-mode-cleanup "skk-isearch" nil t)
+
+;; Enter キーを押したときには確定する
+(setq skk-egg-like-newline t)
+
+;; key
+(define-key global-map (kbd "C-x C-j") 'skk-mode)
+(setq skk-kakutei-key (kbd "C-j"))
+(setq mac-pass-control-to-system nil)
+
+;; skkserv
+(setq skk-server-host "127.0.0.1")
+(setq skk-server-portnum 1178)
+
+;; Do not use C-x C-j as dired's binding
+(setq dired-bind-jump nil)

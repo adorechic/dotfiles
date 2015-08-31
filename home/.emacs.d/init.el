@@ -27,6 +27,7 @@
     coffee-mode
     go-mode
     puppet-mode
+    ddskk
     ))
 
 (let ((not-installed (loop for x in installing-package-list
