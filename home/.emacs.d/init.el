@@ -28,6 +28,7 @@
     go-mode
     puppet-mode
     ddskk
+    magit
     ))
 
 (let ((not-installed (loop for x in installing-package-list
