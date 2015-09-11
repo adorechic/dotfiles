@@ -35,7 +35,6 @@
 (global-set-key (kbd "C-,") 'redo)
 
 ;; cua-mode
-(cua-mode t)
 (setq cua-enable-cua-keys nil) ; CUAキーバインドをオフ
 
 ;; yasnippet
