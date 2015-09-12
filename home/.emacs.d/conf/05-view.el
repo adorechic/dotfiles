@@ -36,3 +36,11 @@
 ;; フェイスを変更する
 (set-face-background 'show-paren-match-face nil)
 (set-face-underline-p 'show-paren-match-face "yellow")
+
+;; diffの表示
+; 追加された行は緑で表示
+(set-face-attribute 'diff-added nil
+                    :foreground "white" :background "dark green")
+; 削除された行は赤で表示
+(set-face-attribute 'diff-removed nil
+                    :foreground "white" :background "dark red")
