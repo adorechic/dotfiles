@@ -27,7 +27,6 @@
     coffee-mode
     go-mode
     puppet-mode
-    ddskk
     magit
     ))
 
