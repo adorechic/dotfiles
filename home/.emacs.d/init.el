@@ -28,6 +28,7 @@
     go-mode
     puppet-mode
     magit
+    ace-jump-mode
     ))
 
 (let ((not-installed (loop for x in installing-package-list
