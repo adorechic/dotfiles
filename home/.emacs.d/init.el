@@ -29,6 +29,7 @@
     puppet-mode
     magit
     ace-jump-mode
+    ace-isearch
     ))
 
 (let ((not-installed (loop for x in installing-package-list
