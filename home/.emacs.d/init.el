@@ -13,6 +13,7 @@
     redo+
     helm
     helm-ls-git
+    helm-ag
     auto-complete
     yaml-mode
     ruby-electric
