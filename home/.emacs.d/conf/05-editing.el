@@ -60,3 +60,11 @@
 
 ;; ace-isearch
 (global-ace-isearch-mode 1)
+
+;; flycheck
+(add-hook 'after-init-hook #'global-flycheck-mode)
+(flycheck-add-next-checker 'javascript-jshint
+                           'javascript-gjslint)
+(eval-after-load 'flycheck
+  '(custom-set-variables
+   '(flycheck-display-errors-function #'flycheck-pos-tip-error-messages)))

@@ -31,6 +31,8 @@
     magit
     ace-jump-mode
     ace-isearch
+    flycheck
+    flycheck-pos-tip
     ))
 
 (let ((not-installed (loop for x in installing-package-list
