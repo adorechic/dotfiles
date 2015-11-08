@@ -34,6 +34,7 @@
     flycheck
     flycheck-pos-tip
     open-junk-file
+    markdown-mode
     ))
 
 (let ((not-installed (loop for x in installing-package-list
