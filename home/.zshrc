@@ -1,11 +1,8 @@
-PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH:$HOME/work/shells
-export PATH
-
+export BINPATH=/usr/local
+export PATH=~/bin:$BINPATH/bin:$BINPATH/sbin:$PATH:$HOME/work/shells
 export LANG=ja_JP.UTF-8
 export LSCOLORS=ExFxCxdxBxegedabagacad
 export LESS='-R'
-export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
-export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 
 alias ls='ls -G'
 alias la='ls -a'
@@ -20,6 +17,12 @@ alias bers='be spring rspec -fd'
 alias emacs-daemon='emacs --daemon'
 alias E='emacsclient -t'
 alias kill-emacs="emacsclient -e '(kill-emacs)'"
+
+# local zshrc
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local ]
+
+export LESSOPEN="| $BINPATH/bin/src-hilite-lesspipe.sh %s"
+export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 
 # 関数
 find-grep () { find . -type f -print | xargs grep -n --binary-files=without-match $@ }
@@ -216,7 +219,4 @@ function precmd () {
 }
 
 # zhs-completions
-fpath=(/usr/local/share/zsh-completions $fpath)
-
-# local zshrc
-[ -f ~/.zshrc.local ] && source ~/.zshrc.local ]
+fpath=($BINPATH/share/zsh-completions $fpath)
