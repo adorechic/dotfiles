@@ -21,7 +21,7 @@ alias kill-emacs="emacsclient -e '(kill-emacs)'"
 # local zshrc
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local ]
 
-export LESSOPEN="| $BINPATH/bin/src-hilite-lesspipe.sh %s"
+export LESSOPEN="| $BINPATH/src-hilite-lesspipe.sh %s"
 export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 
 # 関数
