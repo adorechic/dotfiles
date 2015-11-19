@@ -220,3 +220,9 @@ function precmd () {
 
 # zhs-completions
 fpath=($BINPATH/share/zsh-completions $fpath)
+
+
+# go
+export GOPATH=$HOME/.go
+export GOROOT=/opt/brew/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
