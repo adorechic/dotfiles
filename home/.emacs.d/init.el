@@ -31,8 +31,6 @@
     magit
     ace-jump-mode
     ace-isearch
-    flycheck
-    flycheck-pos-tip
     open-junk-file
     markdown-mode
     ))
