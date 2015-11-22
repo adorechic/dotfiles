@@ -1,4 +1,4 @@
-export BINPATH=/usr/local
+export BINPATH=/opt/brew
 export PATH=~/bin:$BINPATH/bin:$BINPATH/sbin:$PATH:$HOME/work/shells
 export LANG=ja_JP.UTF-8
 export LSCOLORS=ExFxCxdxBxegedabagacad

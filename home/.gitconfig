@@ -18,6 +18,6 @@
   fixup = commit --amend -C HEAD
   gsub = git-gsub
 [pager]
-  log = /usr/local/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
-  show = /usr/local/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
-  diff = /usr/local/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
+  log = /opt/brew/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
+  show = /opt/brew/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
+  diff = /opt/brew/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
