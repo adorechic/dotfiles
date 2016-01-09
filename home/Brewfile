@@ -63,7 +63,6 @@ brew 'tig'
 brew 'tmux'
 brew 'watchman', args: ['HEAD']
 brew 'wget'
-brew 'z'
 brew 'zsh', args: ['without-etcdir']
 brew 'zsh-completions'
 brew 'caskroom/cask/brew-cask'

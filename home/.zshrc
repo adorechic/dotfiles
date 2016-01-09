@@ -93,15 +93,8 @@ setopt auto_cd
 # 打ち間違い訂正
 setopt correct_all
 
-# z
-. `brew --prefix`/etc/profile.d/z.sh
-function precmd () {
-  z --add "$(pwd -P)"
-}
-
 # zhs-completions
 fpath=($BINPATH/share/zsh-completions $fpath)
-
 
 # go
 export GOPATH=$HOME/.go
