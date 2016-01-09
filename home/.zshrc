@@ -57,12 +57,9 @@ setopt hist_reduce_blanks   # 余分なスペースを削除してヒストリ�
 setopt magic_equal_subst    # コマンドラインの引数で --prefix=/usr などの = 以降でも補完できる
 setopt prompt_subst
 
-# history-searchをCtrl+PとCtrl+Nで
-autoload history-search-end
-zle -N history-beginning-search-backward-end history-search-end
-zle -N history-beginning-search-forward-end history-search-end
-bindkey "^P" history-beginning-search-backward-end
-bindkey "^N" history-beginning-search-forward-end
+# antigen zsh-history-substring-search
+bindkey -M emacs '^P' history-substring-search-up
+bindkey -M emacs '^N' history-substring-search-down
 
 # git のファイルパス補完を普通の補完にする
 __git_files() { _files }
