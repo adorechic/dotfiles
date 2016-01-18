@@ -6,4 +6,6 @@ antigen bundle brew
 
 antigen-bundle zsh-users/zsh-history-substring-search
 
+antigen theme flazz
+
 antigen apply
