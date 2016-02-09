@@ -27,6 +27,7 @@ alias kill-emacs="emacsclient -e '(kill-emacs)'"
 
 export LESSOPEN="| $BINPATH/bin/src-hilite-lesspipe.sh %s"
 export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
+export MECABRC=$BINPATH/etc/mecabrc
 
 # 関数
 motionspec () { rake spec files=$1 }
