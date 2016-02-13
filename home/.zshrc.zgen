@@ -1,0 +1,15 @@
+source ~/.zgen/zgen.zsh
+
+# if you want to reload, zgen reset
+if ! zgen saved; then
+   echo "zgen load.."
+
+   zgen oh-my-zsh
+   zgen oh-my-zsh plugins/brew
+   zgen load mollifier/anyframe
+   zgen load zsh-users/zsh-history-substring-search
+
+   zgen oh-my-zsh themes/flazz
+
+   zgen save
+fi

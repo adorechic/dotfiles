@@ -22,8 +22,8 @@ alias kill-emacs="emacsclient -e '(kill-emacs)'"
 # local zshrc
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local ]
 
-# antigen
-[ -f ~/.zshrc.antigen ] && source ~/.zshrc.antigen ]
+# zgen
+[ -f ~/.zshrc.zgen ] && source ~/.zshrc.zgen ]
 
 export LESSOPEN="| $BINPATH/bin/src-hilite-lesspipe.sh %s"
 export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
