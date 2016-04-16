@@ -6,6 +6,7 @@
 [color]
   ui = auto
 [alias]
+  alias = !git config --get-regexp '^alias\\.' | sed 's/alias\\.\\([^ ]*\\) \\(.*\\)/\\1\\\t => \\2/' | sort
   co = checkout
   st = status -sb
   b = branch
