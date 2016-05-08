@@ -18,6 +18,12 @@
   lp = log --decorate --stat --patch
   fixup = commit --amend -C HEAD
   gsub = git-gsub
+  f = fetch
+  fo = fetch origin
+  p = push
+  aa = add -A
+  cm = commit -m
+  c = commit
 [pager]
   log = /opt/brew/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
   show = /opt/brew/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
