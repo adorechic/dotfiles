@@ -1,6 +1,7 @@
 export BINPATH=/opt/brew
 export PATH=~/bin:$BINPATH/bin:$BINPATH/sbin:/usr/local/bin:/usr/local/sbin:$PATH:$HOME/work/shells
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH=/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin:$PATH
 export LANG=ja_JP.UTF-8
 export LSCOLORS=ExFxCxdxBxegedabagacad
 export LESS='-R'
