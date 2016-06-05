@@ -33,6 +33,7 @@
     ace-isearch
     open-junk-file
     markdown-mode
+    swift-mode
     ))
 
 (let ((not-installed (loop for x in installing-package-list
