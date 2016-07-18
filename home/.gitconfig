@@ -23,8 +23,8 @@
   cm = commit -m
   c = commit
 [pager]
-  log = /opt/brew/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
-  show = /opt/brew/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
-  diff = /opt/brew/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
+  log = diff-highlight
+  show = diff-highlight
+  diff = diff-highlight
 [include]
   path = ~/.gitconfig.local

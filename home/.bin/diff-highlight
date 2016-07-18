@@ -1,0 +1,6 @@
+#!/bin/sh
+if [ `uname` = "Darwin" ]; then
+  /opt/brew/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
+else
+  /usr/share/doc/git/contrib/diff-highlight/diff-highlight | less
+fi
