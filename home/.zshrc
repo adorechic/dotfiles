@@ -5,7 +5,6 @@ export PATH=/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin:$PATH
 export PATH=$HOME/.bin:$PATH
 export LANG=ja_JP.UTF-8
 export LSCOLORS=ExFxCxdxBxegedabagacad
-export LESS='-R'
 
 alias ls='ls -G'
 alias la='ls -a'
@@ -29,6 +28,7 @@ alias kill-emacs="emacsclient -e '(kill-emacs)'"
 # zgen
 [ -f ~/.zshrc.zgen ] && source ~/.zshrc.zgen ]
 
+export LESS='-i -M -R -S -W -z-4'
 export LESSOPEN="| $BINPATH/bin/src-hilite-lesspipe.sh %s"
 export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 export MECABRC=$BINPATH/etc/mecabrc
