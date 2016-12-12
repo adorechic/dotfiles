@@ -109,3 +109,6 @@ fpath=($BINPATH/share/zsh-completions $fpath)
 export GOPATH=$HOME/.go
 export GOROOT=/opt/brew/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
+
+# python
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
