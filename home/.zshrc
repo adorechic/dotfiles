@@ -78,6 +78,12 @@ bindkey -M emacs '^N' history-substring-search-down
 # git のファイルパス補完を普通の補完にする
 __git_files() { _files }
 
+# zhs-completions
+fpath=($BINPATH/share/zsh-completions $fpath)
+
+# rust
+source $HOME/.cargo/env
+fpath+=~/.zfunc
 
 # 補完
 autoload -U compinit
@@ -101,9 +107,6 @@ setopt auto_cd
 
 # 打ち間違い訂正
 setopt correct_all
-
-# zhs-completions
-fpath=($BINPATH/share/zsh-completions $fpath)
 
 # go
 export GOPATH=$HOME/.go
