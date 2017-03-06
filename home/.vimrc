@@ -1,40 +1,59 @@
-set nocompatible
-
-if has('vim_starting')
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
+"dein Scripts-----------------------------
+if &compatible
+  set nocompatible               " Be iMproved
 endif
 
-call neobundle#begin(expand('~/.vim/bundle/'))
+" Required:
+set runtimepath+=/Users/adorechic/.vim/bundle/repos/github.com/Shougo/dein.vim
 
-NeoBundle 'Shougo/vimproc'
-"after install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
-NeoBundle 'Shougo/neocomplcache'
-NeoBundle 'Shougo/neosnippet'
-"NeoBundle 'adorechic/snipmate-snippets'
-NeoBundle 'https://github.com/adorechic/snipmate-snippets.git'
-NeoBundle 'Townk/vim-autoclose'
-NeoBundle 'tpope/vim-rails'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'thinca/vim-quickrun'
-NeoBundle 'AnsiEsc.vim'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'JavaScript-syntax'
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'rodjek/vim-puppet'
-NeoBundle 'matchit.zip'
-NeoBundle 'ruby-matchit'
+" Required:
+if dein#load_state('/Users/adorechic/.vim/bundle')
+  call dein#begin('/Users/adorechic/.vim/bundle')
 
-call neobundle#end()
+  " Let dein manage dein
+  " Required:
+  call dein#add('/Users/adorechic/.vim/bundle/repos/github.com/Shougo/dein.vim')
+
+  " Add or remove your plugins here:
+  call dein#add('Shougo/neosnippet.vim')
+  call dein#add('Shougo/neosnippet-snippets')
+
+  " You can specify revision/branch/tag.
+  call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
+
+  call dein#add('Shougo/vimproc')
+  "after install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
+  call dein#add('Shougo/neocomplcache')
+  call dein#add('https://github.com/adorechic/snipmate-snippets.git')
+  call dein#add('Townk/vim-autoclose')
+  call dein#add('tpope/vim-rails')
+  call dein#add('Shougo/unite.vim')
+  call dein#add('thinca/vim-quickrun')
+  call dein#add('AnsiEsc.vim')
+  call dein#add('tpope/vim-fugitive')
+  call dein#add('JavaScript-syntax')
+  call dein#add('kchmck/vim-coffee-script')
+  call dein#add('rodjek/vim-puppet')
+  call dein#add('matchit.zip')
+  call dein#add('ruby-matchit')
+
+  " Required:
+  call dein#end()
+  call dein#save_state()
+endif
+
+" Required:
+filetype plugin indent on
+syntax enable
+
+" If you want to install not installed plugins on startup.
+"if dein#check_install()
+"  call dein#install()
+"endif
+
+"End dein Scripts-------------------------
 
 filetype plugin indent on
-
-" Installation check.
-if neobundle#exists_not_installed_bundles()
-  echomsg 'Not installed bundles : ' .
-        \ string(neobundle#get_not_installed_bundle_names())
-  echomsg 'Please execute ":NeoBundleInstall" command.'
-  "finish
-endif
 
 set tabstop=2
 set shiftwidth=2
