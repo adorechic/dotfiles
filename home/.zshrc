@@ -21,6 +21,8 @@ alias rs='bin/rails s'
 alias emacs-daemon='emacs --daemon'
 alias E='emacsclient -t'
 alias kill-emacs="emacsclient -e '(kill-emacs)'"
+alias ea='envchain aws'
+alias eab='envchain aws bundle exec'
 
 # local zshrc
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local ]
