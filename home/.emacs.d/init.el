@@ -35,6 +35,7 @@
     markdown-mode
     swift-mode
     rust-mode
+    php-mode
     ))
 
 (let ((not-installed (loop for x in installing-package-list
