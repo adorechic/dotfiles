@@ -22,6 +22,7 @@
   aa = add -A
   cm = commit -m
   c = commit
+  stash-all = stash save --include-untracked
 [pager]
   log = diff-highlight
   show = diff-highlight
