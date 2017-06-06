@@ -29,3 +29,5 @@
   diff = diff-highlight
 [include]
   path = ~/.gitconfig.local
+[status]
+  showUntrackedFiles = all
