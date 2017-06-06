@@ -12,7 +12,7 @@
   ds = diff --cached
   g = grep --line-number --show-function --color --heading --break
   l = log --oneline --decorate --color
-  lg = log --oneline --decorate --color --graph
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
   lp = log --decorate --stat --patch
   fixup = commit --amend -C HEAD
   gsub = git-gsub
