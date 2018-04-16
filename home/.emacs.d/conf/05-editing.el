@@ -29,11 +29,6 @@
 (add-hook 'after-save-hook
           'executable-make-buffer-file-executable-if-script-p)
 
-;; redo+
-(require 'redo+)
-;; C-' にredoをわりあてる !! terminal modeだと動かない
-(global-set-key (kbd "C-,") 'redo)
-
 ;; cua-mode
 (setq cua-enable-cua-keys nil) ; CUAキーバインドをオフ
 

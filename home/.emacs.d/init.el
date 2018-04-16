@@ -10,7 +10,6 @@
 (defvar installing-package-list
   '(
     init-loader
-    redo+
     helm
     helm-ls-git
     helm-ag
@@ -62,7 +61,7 @@
  '(open-junk-file-directory "~/.emacs.d/junk/%Y/%m/%d-%H%M%S." t)
  '(package-selected-packages
    (quote
-    (rust-mode yasnippet yaml-mode swift-mode scss-mode ruby-electric ruby-block rinari redo+ puppet-mode open-junk-file markdown-mode magit less-css-mode init-loader helm-ls-git helm-descbinds helm-ag haml-mode go-mode flycheck-pos-tip egg descbinds-anything ddskk coffee-mode auto-complete ace-isearch))))
+    (rust-mode yasnippet yaml-mode swift-mode scss-mode ruby-electric ruby-block rinari puppet-mode open-junk-file markdown-mode magit less-css-mode init-loader helm-ls-git helm-descbinds helm-ag haml-mode go-mode flycheck-pos-tip egg descbinds-anything ddskk coffee-mode auto-complete ace-isearch))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
