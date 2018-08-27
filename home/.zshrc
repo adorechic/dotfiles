@@ -23,6 +23,7 @@ alias E='emacsclient -t'
 alias kill-emacs="emacsclient -e '(kill-emacs)'"
 alias ea='envchain aws'
 alias eab='envchain aws bundle exec'
+alias fin='terminal-notifier -message "Finished!!!"'
 
 # local zshrc
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local ]
