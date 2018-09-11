@@ -1,5 +1,6 @@
 export BINPATH=/opt/brew
-export PATH=~/bin:$BINPATH/bin:$BINPATH/sbin:/usr/local/bin:/usr/local/sbin:$PATH:$HOME/work/shells
+PYTHON_USER_BASE_PATH=$(python -m site --user-base)
+export PATH=~/bin:$BINPATH/bin:$BINPATH/sbin:/usr/local/bin:/usr/local/sbin:$PATH:$HOME/work/shells:$PYTHON_USER_BASE_PATH/bin
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin:$PATH
 export PATH=$HOME/.bin:$PATH
