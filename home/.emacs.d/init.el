@@ -35,6 +35,7 @@
     swift-mode
     rust-mode
     php-mode
+    rjsx-mode
     ))
 
 (let ((not-installed (loop for x in installing-package-list
