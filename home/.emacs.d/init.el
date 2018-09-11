@@ -35,6 +35,7 @@
     swift-mode
     rust-mode
     php-mode
+    web-mode
     rjsx-mode
     ))
 
