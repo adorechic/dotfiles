@@ -38,6 +38,8 @@
     web-mode
     rjsx-mode
     typescript-mode
+    company
+    tide
     ))
 
 (let ((not-installed (loop for x in installing-package-list
