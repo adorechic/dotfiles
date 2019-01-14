@@ -8,9 +8,6 @@ export PATH=$BINPATH/opt/openssl/bin:$PATH
 export PATH=$HOME/.ndenv/bin:$PATH
 export LANG=ja_JP.UTF-8
 export LSCOLORS=ExFxCxdxBxegedabagacad
-export LDFLAGS="-L/opt/brew/opt/openssl/lib"
-export CPPFLAGS="-I/opt/brew/opt/openssl/include"
-export PKG_CONFIG_PATH="/opt/brew/opt/openssl/lib/pkgconfig"
 
 alias ls='ls -G'
 alias la='ls -a'
