@@ -34,7 +34,7 @@ alias fin='terminal-notifier -message "Finished!!!"'
 [ -f ~/.zshrc.zgen ] && source ~/.zshrc.zgen ]
 
 export LESS='-i -M -R -S -W -z-4'
-export LESSOPEN="| $BINPATH/bin/src-hilite-lesspipe.sh %s"
+export LESSOPEN="| $BINPATH/source-highlight/3.1.9/bin/src-hilite-lesspipe.sh %s"
 export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 export MECABRC=$BINPATH/etc/mecabrc
 
