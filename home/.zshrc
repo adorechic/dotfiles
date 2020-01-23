@@ -5,7 +5,6 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin:$PATH
 export PATH=$HOME/.bin:$PATH
 export PATH=$BINPATH/opt/openssl/bin:$PATH
-export PATH=$HOME/.ndenv/bin:$PATH
 export LANG=ja_JP.UTF-8
 export LSCOLORS=ExFxCxdxBxegedabagacad
 
@@ -121,6 +120,6 @@ export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 
 # python
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
-
-# node
-eval "$(ndenv init -)"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
