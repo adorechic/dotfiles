@@ -1,4 +1,4 @@
-export BINPATH=/opt/brew
+export BINPATH=/usr/local/Cellar
 PYTHON_USER_BASE_PATH=$(python -m site --user-base)
 export PATH=~/bin:$BINPATH/bin:$BINPATH/sbin:/usr/local/bin:/usr/local/sbin:$PATH:$HOME/work/shells:$PYTHON_USER_BASE_PATH/bin
 export PATH=$HOME/.nodebrew/current/bin:$PATH
@@ -116,7 +116,7 @@ setopt correct_all
 
 # go
 export GOPATH=$HOME/.go
-export GOROOT=/opt/brew/opt/go/libexec
+export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 
 # python
