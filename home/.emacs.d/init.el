@@ -62,7 +62,7 @@
  '(helm-mini-default-sources
    (quote
     (helm-source-buffers-list helm-source-files-in-current-dir helm-source-ls-git helm-source-recentf)))
- '(helm-truncate-lines t t)
+ '(helm-truncate-lines t)
  '(open-junk-file-directory "~/.emacs.d/junk/%Y/%m/%d-%H%M%S." t)
  '(package-selected-packages
    (quote
