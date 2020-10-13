@@ -1,6 +1,7 @@
+
 #!/bin/sh
 if [ `uname` = "Darwin" ]; then
-  /usr/local/Cellar/git/2.24.0_1/share/git-core/contrib/diff-highlight/diff-highlight | less
+  /usr/local/Cellar/git/2.26.1/share/git-core/contrib/diff-highlight/diff-highlight | less
 else
   /usr/share/doc/git/contrib/diff-highlight/diff-highlight | less
 fi
