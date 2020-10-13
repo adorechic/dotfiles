@@ -31,6 +31,7 @@ alias fin='terminal-notifier -message "Finished!!!"'
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local ]
 
 # zgen
+export ZSH_DISABLE_COMPFIX=true
 [ -f ~/.zshrc.zgen ] && source ~/.zshrc.zgen ]
 
 export LESS='-i -M -R -S -W -z-4'
@@ -91,8 +92,8 @@ source $HOME/.cargo/env
 fpath+=~/.zfunc
 
 # 補完
-autoload -U compinit
-compinit
+# autoload -U compinit
+# compinit
 zstyle ':completion:*' list-colors 'di=;34;1' 'ln=;35;1' 'so=;32;1' 'ex=31;1' 'bd=46;34' 'cd=43;34'
 
 setopt list_packed # 補完をつめて表示
