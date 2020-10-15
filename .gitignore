@@ -7,6 +7,7 @@ home/.emacs.d/ac-comphist.dat
 home/.emacs.d/kkcrc
 home/.emacs.d/recentf
 home/.emacs.d/junk
+home/.emacs.d/transient/history.el
 home/.vim/bundle/*
 !neobundle.vim
 \.#*
