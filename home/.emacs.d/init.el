@@ -5,9 +5,10 @@
 (package-initialize)
 
 ;; install package.el
-(require 'cl)
+(require 'cl-lib)
 (defvar installing-package-list
   '(
+    cl-lib
     init-loader
     helm
     helm-ls-git
@@ -40,7 +41,7 @@
     tide
     ))
 
-(let ((not-installed (loop for x in installing-package-list
+(let ((not-installed (cl-loop for x in installing-package-list
                             when (not (package-installed-p x))
                             collect x)))
   (when not-installed
