@@ -1,10 +1,16 @@
 ;; ruby-mode
+
+;; マジコメしない
+(setq ruby-insert-encoding-magic-comment nil)
+
 (setq ruby-deep-indent-paren-style nil)
 
 ;; 対応するendや括弧をハイライト
-(require 'ruby-block)
+;(require 'ruby-block)
 (require 'haml-mode)
 (require 'rinari)
+
+(add-to-list 'auto-mode-alist '("\\.jb\\'" . ruby-mode))
 
 ;; 自動でendなどを補完
 (require 'ruby-electric)
@@ -14,8 +20,6 @@
   (ruby-indent-line t)
   (end-of-line))
 
-;; マジコメしない
-(setq ruby-insert-encoding-magic-comment nil)
 
 (defun ruby-mode-hooks ()
   (ruby-electric-mode t)
