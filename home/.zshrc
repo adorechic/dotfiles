@@ -1,10 +1,11 @@
 export BINPATH=/usr/local/Cellar
-PYTHON_USER_BASE_PATH=$(python -m site --user-base)
-export PATH=~/bin:$BINPATH/bin:$BINPATH/sbin:/usr/local/bin:/usr/local/sbin:$PATH:$HOME/work/shells:$PYTHON_USER_BASE_PATH/bin
+export PATH=~/bin:$BINPATH/bin:$BINPATH/sbin:/usr/local/bin:/usr/local/sbin:$PATH:$HOME/work/shells
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin:$PATH
 export PATH=$HOME/.bin:$PATH
 export PATH=$BINPATH/opt/openssl/bin:$PATH
+PYTHON_USER_BASE_PATH=$(python -m site --user-base)
+export PATH=$PYTHON_USER_BASE_PATH/bin:$PATH
 export LANG=ja_JP.UTF-8
 export LSCOLORS=ExFxCxdxBxegedabagacad
 
